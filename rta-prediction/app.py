@@ -4,8 +4,8 @@ import streamlit as st
 from catboost import CatBoostClassifier
 from prediction import get_encoded_value, get_prediction
 
-model=joblib.load(r'Model/catboost.joblib')
-encodings=joblib.load(r'Model/label_encodings')
+model=joblib.load(r'rta-prediction/Model/catboost.joblib')
+encodings=joblib.load(r'rta-prediction/Model/label_encodings')
 
 st.set_page_config(page_title="Accident Severity Prediction App",
                    page_icon="🚧", layout="wide")
